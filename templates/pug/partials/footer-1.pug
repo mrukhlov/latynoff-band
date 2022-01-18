@@ -1,0 +1,36 @@
+// footer 1
+footer.footer-1(class=footerLight && 'footer-1_light')
+	.footer-1-container.container
+		.footer-1-row.footer-1-row_first
+			.footer-1-col
+				.footer-1-flex
+					.footer-1-group
+						.footer-1-title Sitemap
+						nav.footer-1-nav.nav
+							a.nav-link(href='#') About
+							a.nav-link(href='#') Portfolio
+							a.nav-link(href='#') Blog
+							a.nav-link(href='#') Careers
+							a.nav-link(href='#') Press
+					.footer-1-group
+						.footer-1-title Info
+						nav.footer-1-nav.nav
+							a.nav-link(href='#') FAQ
+							a.nav-link(href='#') Privacy Policy
+							a.nav-link(href='#') Contact Us
+			.footer-1-col
+				.footer-1-title Newsletter
+				// subscribe
+				form.footer-1-subscribe.subscribe(action='')
+					.subscribe-label Email Address
+					input.subscribe-input(type='email' required)
+					button.subscribe-btn.btn.btn_white(type='submit') Sign Up
+		.footer-1-row.footer-1-row_last
+			.footer-1-col
+				a.footer-1-logo(href='/')
+					if footerLight
+						img.footer-1-pic(src='/static/img/kalli-black.svg' width='56' alt='Kalli')
+					else
+						img.footer-1-pic(src='/static/img/kalli-white.svg' width='56' alt='Kalli')
+			.footer-1-col
+				.footer-1-content.content Copyright © 2019 Kalli

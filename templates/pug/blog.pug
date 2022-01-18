@@ -1,0 +1,62 @@
+extends layouts/_layout
+block content
+	// header
+	header.header
+		.header-container.container
+			.header-left
+				button.header-action(data-menu-open)
+					| <svg class="icon icon-list" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 16"><path d="M8 14a1 1 0 0 1 1 .9v.1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1 1 1 0 0 1 1-1h7zm9-7c.5 0 .9.4 1 .9V8a1 1 0 0 1-1 1H1c-.5 0-1-.4-1-1a1 1 0 0 1 1-1h16zm0-7c.5 0 .9.4 1 .9V1a1 1 0 0 1-1 1H1c-.5 0-1-.4-1-1a1 1 0 0 1 1-1h16z"/></svg>
+				a.header-logo(href='/')
+					img.header-pic(src='/static/img/kalli-black.svg' width='56' alt='Kalli')
+			.header-center
+				nav.header-nav
+					a.header-link.active(href='#') Magazine
+					a.header-link(href='#') World
+					a.header-link(href='#') Tech
+					a.header-link(href='#') Health
+					a.header-link(href='#') Sport
+					a.header-link(href='#') Travel
+					a.header-link(href='#') Design
+			.header-right
+				button.header-action
+					| <svg class="icon icon-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><path d="M8 0a8 8 0 0 1 8 8c0 1.848-.627 3.55-1.68 4.905l3.386 3.388a1 1 0 1 1-1.414 1.414h0l-3.388-3.386C11.55 15.373 9.848 16 8 16A8 8 0 1 1 8 0zm0 2a6 6 0 1 0 0 12A6 6 0 1 0 8 2z"/></svg>
+				a.header-user(href='#')
+					img.header-pic(src='/static/img/user-1.jpg' alt='User')
+	include ./partials/menu-1
+	// section
+	section.section
+		.section-container.container
+			// cards 6
+			.cards-6
+				.cards-6-container
+					// featured
+					.featured(style='background-image: url(/static/img/bg-image-21.jpg')
+						.featured-caption Featured
+						.featured-title.title.title_sm New Thrills in Las Vegas: Go-Kart Racing at the Speedway
+						a.featured-more.more(href='#') Read More
+							| <svg class="icon icon-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 9"><path d="M13 6.9c-.4.4-.4.9-.1 1.3l.1.1c.4.4 1 .4 1.4 0L17.7 5a1 1 0 0 0 0-1.4L14.4.3a1 1 0 0 0-1.3-.1l-.1.1a1 1 0 0 0 0 1.4l1.6 1.6H1a1 1 0 0 0-1 .9v.1a1 1 0 0 0 1 1h13.6L13 6.9z"/></svg>
+					// posts
+					.posts
+						.posts-title.title.title_sm Last News
+						.posts-list
+							mixin postsItem(src, caption, title, content)
+								.posts-item
+									a.posts-preview(href='#')
+										img.posts-pic(src=src alt='Image')
+									.posts-inner
+										a.posts-caption(href='#')=caption
+										a.posts-name.title.title_sm(href='#')=title
+										.posts-content.content=content
+										.posts-meta
+											.posts-date January 26, 2019
+											a.posts-more.more(href='#') Read More
+												| <svg class="icon icon-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 9"><path d="M13 6.9c-.4.4-.4.9-.1 1.3l.1.1c.4.4 1 .4 1.4 0L17.7 5a1 1 0 0 0 0-1.4L14.4.3a1 1 0 0 0-1.3-.1l-.1.1a1 1 0 0 0 0 1.4l1.6 1.6H1a1 1 0 0 0-1 .9v.1a1 1 0 0 0 1 1h13.6L13 6.9z"/></svg>
+							+postsItem('/static/img/image-7.jpg', 'World', 'Five California Buildings To See', 'For gathering tree abundantly fourth saying bearing third, first whales, tree. Said gathered, she\'d. Female, they\'re third us.')
+							+postsItem('/static/img/image-8.jpg', 'Travel', 'City Breaks: From San Francisco', 'They\'re. Beginning whose hath moved. Of fowl set day moveth midst over forth one. May god.')
+							+postsItem('/static/img/image-9.jpg', 'Sport', 'Baseball: City Playoff Pairings', 'Them Together forth spirit us, beast without called you\'re spirit fish bearing light. Fowl. Created.')
+							+postsItem('/static/img/image-10.jpg', 'Tech', 'New Wearable Device Is Coming', 'Our moved have which said fourth there greater. Evening Be fly land us green, which give. Midst Can\'t image very')
+				.cards-6-sidebar
+					include ./partials/widgets
+	include ./partials/footer-5
+
+

@@ -1,0 +1,142 @@
+extends layouts/_layout
+block content
+	// header
+	header.header.header_white.header_absolute
+		.header-container.container
+			.header-left
+				a.header-logo(href='/')
+					img.header-pic(src='/static/img/kalli-white.svg' width='56' alt='Kalli')
+			.header-right
+				.header-nav
+					a.header-link(href='#') Portfolio
+					a.header-link(href='#') About
+					a.header-link(href='#') Contact
+				button.header-action(data-menu-open)
+					| <svg class="icon icon-grid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"><path d="M1.5 14c.8 0 1.5.7 1.5 1.5S2.3 17 1.5 17 0 16.3 0 15.5.7 14 1.5 14zm14 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 17 8.5 17 7 16.3 7 15.5 7.7 14 8.5 14zm-7-7C2.3 7 3 7.7 3 8.5S2.3 10 1.5 10 0 9.3 0 8.5.7 7 1.5 7zm14 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5S14 9.3 14 8.5 14.7 7 15.5 7zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 10 8.5 10 7 9.3 7 8.5 7.7 7 8.5 7zm-7-7C2.3 0 3 .7 3 1.5S2.3 3 1.5 3 0 2.3 0 1.5.7 0 1.5 0zm14 0c.8 0 1.5.7 1.5 1.5S16.3 3 15.5 3 14 2.3 14 1.5 14.7 0 15.5 0zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 3 8.5 3 7 2.3 7 1.5 7.7 0 8.5 0z"/></svg>
+	include ./partials/menu-1
+	// extheader 2
+	.extheader-2(style='background-image: url(/static/img/bg-image-23.jpg)')
+		.extheader-2-container.container
+			a.extheader-2-btn.btn(href='#')
+				| <svg class="icon icon-arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 9"><path d="M5 6.9c.4.4.4 1 0 1.4h0c-.4.4-1 .4-1.4 0L.3 5a1 1 0 0 1 0-1.4L3.6.3A1 1 0 0 1 5 .3h0a1 1 0 0 1 0 1.4L3.4 3.3H17a1 1 0 0 1 1 1h0a1 1 0 0 1-1 1H3.4L5 6.9z"/></svg>
+				span.btn-span Back
+	// section
+	section.section
+		.section-container.container
+			// text 6
+			.text-6
+				.text-6-col
+					.text-6-title.title Travel — I walked the entire length of Santa Monica and here Is what I found
+					// user
+					.text-6-user.user
+						.user-preview
+							img.user-pic(src='/static/img/user-1.jpg' alt='User')
+						.user-details
+							.user-name Valerie Turner
+				.text-6-col
+					// meta
+					.text-6-meta.meta
+						.meta-category Travel
+						.meta-date Published January 26, 2019
+					.text-6-content.content
+						p Today’s article was supposed to be about New Zealand. For almost two months, the front page of my blog signaled to the wandering reader that this was “Carried Away Time”: Carrie was losing herself on the road, again, like every year before, during the summer season.
+						p Today is Wednesday. Today is the day I was supposed to get back to normal. Blogging twice a week, catching up with other people’s writing, getting back to work. You know: whatever happens to you, however far you travel, no matter how many fantastic places and people you live, or however long your absence may be — when you’re back home, when you wake up jet-lagged the following morning, your spirit and your body proudly demonstrate their admirable and despicable ability to just go back to normal, to habits, to patterns.
+	// section
+	section.section.section_pt0.section_hidden
+		.section-container.container
+			// gallery 2
+			.gallery-2.js-gallery-2
+				.gallery-2-slider.js-gallery-2-slider
+					.gallery-2-slide
+						a.gallery-2-link(href='#')
+							img.gallery-2-pic(src='/static/img/image-29.jpg' alt='Image')
+						a.gallery-2-btn.btn.btn_icon.btn_white(href='#')
+							| <svg class="icon icon-grid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"><path d="M1.5 14c.8 0 1.5.7 1.5 1.5S2.3 17 1.5 17 0 16.3 0 15.5.7 14 1.5 14zm14 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 17 8.5 17 7 16.3 7 15.5 7.7 14 8.5 14zm-7-7C2.3 7 3 7.7 3 8.5S2.3 10 1.5 10 0 9.3 0 8.5.7 7 1.5 7zm14 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5S14 9.3 14 8.5 14.7 7 15.5 7zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 10 8.5 10 7 9.3 7 8.5 7.7 7 8.5 7zm-7-7C2.3 0 3 .7 3 1.5S2.3 3 1.5 3 0 2.3 0 1.5.7 0 1.5 0zm14 0c.8 0 1.5.7 1.5 1.5S16.3 3 15.5 3 14 2.3 14 1.5 14.7 0 15.5 0zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 3 8.5 3 7 2.3 7 1.5 7.7 0 8.5 0z"/></svg>
+							span.btn-span See More
+					.gallery-2-slide
+						a.gallery-2-link(href='#')
+							img.gallery-2-pic(src='/static/img/image-26.jpg' alt='Image')
+						a.gallery-2-btn.btn.btn_icon.btn_white(href='#')
+							| <svg class="icon icon-grid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"><path d="M1.5 14c.8 0 1.5.7 1.5 1.5S2.3 17 1.5 17 0 16.3 0 15.5.7 14 1.5 14zm14 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 17 8.5 17 7 16.3 7 15.5 7.7 14 8.5 14zm-7-7C2.3 7 3 7.7 3 8.5S2.3 10 1.5 10 0 9.3 0 8.5.7 7 1.5 7zm14 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5S14 9.3 14 8.5 14.7 7 15.5 7zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 10 8.5 10 7 9.3 7 8.5 7.7 7 8.5 7zm-7-7C2.3 0 3 .7 3 1.5S2.3 3 1.5 3 0 2.3 0 1.5.7 0 1.5 0zm14 0c.8 0 1.5.7 1.5 1.5S16.3 3 15.5 3 14 2.3 14 1.5 14.7 0 15.5 0zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 3 8.5 3 7 2.3 7 1.5 7.7 0 8.5 0z"/></svg>
+							span.btn-span See More
+					.gallery-2-slide
+						a.gallery-2-link(href='#')
+							img.gallery-2-pic(src='/static/img/image-30.jpg' alt='Image')
+						a.gallery-2-btn.btn.btn_icon.btn_white(href='#')
+							| <svg class="icon icon-grid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"><path d="M1.5 14c.8 0 1.5.7 1.5 1.5S2.3 17 1.5 17 0 16.3 0 15.5.7 14 1.5 14zm14 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 17 8.5 17 7 16.3 7 15.5 7.7 14 8.5 14zm-7-7C2.3 7 3 7.7 3 8.5S2.3 10 1.5 10 0 9.3 0 8.5.7 7 1.5 7zm14 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5S14 9.3 14 8.5 14.7 7 15.5 7zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 10 8.5 10 7 9.3 7 8.5 7.7 7 8.5 7zm-7-7C2.3 0 3 .7 3 1.5S2.3 3 1.5 3 0 2.3 0 1.5.7 0 1.5 0zm14 0c.8 0 1.5.7 1.5 1.5S16.3 3 15.5 3 14 2.3 14 1.5 14.7 0 15.5 0zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 3 8.5 3 7 2.3 7 1.5 7.7 0 8.5 0z"/></svg>
+							span.btn-span See More
+					.gallery-2-slide
+						a.gallery-2-link(href='#')
+							img.gallery-2-pic(src='/static/img/image-31.jpg' alt='Image')
+						a.gallery-2-btn.btn.btn_icon.btn_white(href='#')
+							| <svg class="icon icon-grid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"><path d="M1.5 14c.8 0 1.5.7 1.5 1.5S2.3 17 1.5 17 0 16.3 0 15.5.7 14 1.5 14zm14 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 17 8.5 17 7 16.3 7 15.5 7.7 14 8.5 14zm-7-7C2.3 7 3 7.7 3 8.5S2.3 10 1.5 10 0 9.3 0 8.5.7 7 1.5 7zm14 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5S14 9.3 14 8.5 14.7 7 15.5 7zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 10 8.5 10 7 9.3 7 8.5 7.7 7 8.5 7zm-7-7C2.3 0 3 .7 3 1.5S2.3 3 1.5 3 0 2.3 0 1.5.7 0 1.5 0zm14 0c.8 0 1.5.7 1.5 1.5S16.3 3 15.5 3 14 2.3 14 1.5 14.7 0 15.5 0zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 3 8.5 3 7 2.3 7 1.5 7.7 0 8.5 0z"/></svg>
+							span.btn-span See More
+				.gallery-2-progress
+					.gallery-2-position.js-gallery-2-position
+				.gallery-2-pager <span class="gallery-2-current js-gallery-2-current">01</span> — <span class="gallery-2-total js-gallery-2-total">05</span>
+	// section
+	section.section.section_pt0
+		.section-container.container
+			// text 18
+			.text-18
+				.text-18-col
+					.text-18-subtitle Share Post
+					.text-18-socials.socials.socials_share.socials_rounded
+						a.socials-item(href='#')
+							| <svg class="icon icon-facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 18"><path d="M6.1 18V9.8h2.8l.4-3.2H6.1v-2c0-.9.3-1.6 1.6-1.6h1.7V.1C9 .1 8 0 6.9 0 4.4 0 2.8 1.5 2.8 4.2v2.4H0v3.2h2.8V18h3.3z"/></svg>
+						a.socials-item(href='#')
+							| <svg class="icon icon-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 15"><path d="M5.7 14.6c6.8 0 10.5-5.6 10.5-10.5v-.5c.7-.5 1.3-1.2 1.8-1.9-.7.3-1.4.5-2.1.6.8-.5 1.3-1.2 1.6-2-.7.4-1.5.7-2.3.9C14.5.4 13.5 0 12.5 0c-2 0-3.7 1.7-3.7 3.7 0 .3 0 .6.1.8C5.8 4.4 3.1 2.9 1.3.7.9 1.2.8 1.9.8 2.5c0 1.3.7 2.4 1.6 3.1-.6 0-1.2-.2-1.7-.5h0C.7 7 2 8.5 3.7 8.8c-.3.1-.6.1-1 .1-.2 0-.5 0-.7-.1.5 1.5 1.8 2.5 3.5 2.6-1.3 1-2.9 1.6-4.6 1.6-.3 0-.6 0-.9-.1 1.6 1 3.6 1.7 5.7 1.7"/></svg>
+						a.socials-item(href='#')
+							| <svg class="icon icon-more" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 18"><path d="M2 14a2 2 0 1 1 0 4 2 2 0 1 1 0-4zm0-7a2 2 0 1 1 0 4 2 2 0 1 1 0-4zm0-7a2 2 0 1 1 0 4 2 2 0 1 1 0-4z"/></svg>
+				.text-18-col
+					.text-18-content.content
+						p But yesterday night, GMT+1, something beautiful happened. Something that shook my spirit and body and made another travel, a previous travel, emerge, come back to life. I got a comment from Abraham, Venice Beach, Los Angeles that stranger, whom I had met just for a few minutes five years ago, whose aura had impressed me, and about whom I had finally written a story, was getting back to me.
+						p I went through a rollercoaster of contradictory emotions: skepticism, realization, happiness, guilt, elation, excitement, curiosity. I remember you, Abraham. Vividly. I remember your eyes and your hand shaking mine. I thought I had grasped at least a bit of who you were; enough to write an article about “all the rest”: the “you” that I had never got to know.
+					.text-18-quote
+						.text-18-title.title "A hilarious dark fantasy” —
+						.text-18-author Booke Cagle
+					.text-18-content.content
+						p Yesterday night, all of a sudden, people shared that article. People from Venice. People who know you. Through them, this morning, I glimpsed a bit of “all the rest”: your art, your energy, your daily life, these people. That art, that music… You seem to be infused with it. And yet, I didn’t see any of it five years ago. Of course I didn’t: there I was, a goddam tourist with her goddam camera.
+					// links
+					.text-18-links.links
+						.links-label.label Related Articles
+						.links-items
+							.links-item
+								a.links-link(href='#') What to see in West Cost?
+							.links-item
+								a.links-link(href='#') California: Rocks of Pfeiffer Beach
+							.links-item
+								a.links-link(href='#') How to travel the world and get paid for it.
+					// tags
+					.text-18-tags.tags
+						a.tags-item(href='#') travel
+						a.tags-item(href='#') california
+						a.tags-item(href='#') summer
+						a.tags-item(href='#') west coast
+						a.tags-item(href='#') world
+	// section
+	section.section.section_pt0
+		.section-container.container.container_sm
+			// comment 2
+			.comment-2
+				.comment-2-title Comments (26)
+				form.comment-2-form(action='')
+					// field
+					.field.field_actions
+						textarea.field-textarea(placeholder='Write a Comment' required)
+						.field-actions
+							button.field-btn.btn.btn_transparent(type='submit') Preview
+							button.field-btn.btn(type='submit') Submit
+				// reviews
+				.comment-2-reviews.reviews
+					.reviews-item
+						.reviews-inner
+							.reviews-head <span class="reviews-user">Josh Gordon —</span> January 28, 2019
+							.reviews-content.content Blogging twice a week, catching up with other people’s writing, getting back to work. You know: whatever happens to you, however far you travel, no matter how many places.
+					.reviews-item
+						.reviews-inner
+							.reviews-head <span class="reviews-user">Ashley Lardeau —</span> January 28, 2019
+							.reviews-content.content I went through a rollercoaster of contradictory emotions: skepticism, realization, happiness, guilt, elation, excitement, curiosity. I remember you, Abraham. Vividly.
+	include ./partials/footer-2
+
+

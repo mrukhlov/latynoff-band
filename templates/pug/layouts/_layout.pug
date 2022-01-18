@@ -1,0 +1,26 @@
+//- block append script
+//- - const static = "{% load static %}"
+//- - var static = "asd"
+include ../mixins/all
+
+//- #{static}
+//- "{% load static %}"
+//- -load static
+
+doctype html
+html(lang="en")
+	head
+		include _head
+
+	body(class=bodyClass)
+		// page
+		.page(class=pageClass)
+			block content
+		// scripts
+		block scripts
+			//- script(src="{% static 'js/lib/jquery.min.js' %}")
+			//- script(src="{% static 'js/lib/slick.min.js' %}")
+			//- script(src="{% static 'js/lib/app.js' %}")
+			script(src="/static/js/lib/jquery.min.js")
+			script(src="/static/js/lib/slick.min.js")
+			script(src="/static/js/lib/app.js")

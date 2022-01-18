@@ -1,0 +1,81 @@
+extends layouts/_layout
+block content
+	// header
+	header.header
+		.header-container.container
+			.header-left
+				button.header-action(data-menu-open)
+					| <svg class="icon icon-grid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"><path d="M1.5 14c.8 0 1.5.7 1.5 1.5S2.3 17 1.5 17 0 16.3 0 15.5.7 14 1.5 14zm14 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 17 8.5 17 7 16.3 7 15.5 7.7 14 8.5 14zm-7-7C2.3 7 3 7.7 3 8.5S2.3 10 1.5 10 0 9.3 0 8.5.7 7 1.5 7zm14 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5S14 9.3 14 8.5 14.7 7 15.5 7zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 10 8.5 10 7 9.3 7 8.5 7.7 7 8.5 7zm-7-7C2.3 0 3 .7 3 1.5S2.3 3 1.5 3 0 2.3 0 1.5.7 0 1.5 0zm14 0c.8 0 1.5.7 1.5 1.5S16.3 3 15.5 3 14 2.3 14 1.5 14.7 0 15.5 0zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 3 8.5 3 7 2.3 7 1.5 7.7 0 8.5 0z"/></svg>
+			.header-center
+				a.header-logo(href='/')
+					img.header-pic(src='/static/img/kalli-black.svg' width='56' alt='Kalli')
+			.header-right
+				a.header-action(href='#')
+					| <svg class="icon icon-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><path d="M8 0a8 8 0 0 1 8 8c0 1.848-.627 3.55-1.68 4.905l3.386 3.388a1 1 0 1 1-1.414 1.414h0l-3.388-3.386C11.55 15.373 9.848 16 8 16A8 8 0 1 1 8 0zm0 2a6 6 0 1 0 0 12A6 6 0 1 0 8 2z"/></svg>
+	include ./partials/menu-1
+	// section
+	section.section.section_pt0.section_pb0
+		.section-container.container
+			// video 3
+			a.video-3(href='#' style='background-image: url(/static/img/bg-image-14.jpg)')
+				.video-3-play.play.play_lg.play_white(data-video='PYBmAzhTecU')
+					.play-icon
+						| <svg class="icon icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18"><path d="M1 18c-.17 0-.35-.04-.5-.13A1 1 0 0 1 0 17V1A1 1 0 0 1 .5.13a1 1 0 0 1 1 0l13.86 8a1 1 0 0 1 0 1.73l-13.86 8c-.15.1-.33.13-.5.13h0z"/></svg>
+					.play-title Play Video
+	// section
+	section.section
+		.section-container.container.container_md
+			// text 32
+			.text-32
+				.text-32-title.title.title_md Let's go and we'll show what conquered us
+				.text-32-inner
+					.text-32-content.content.content_cols2 Evening fill our night earth, shall morning male, created blessed isn't sixth morning you'll greater lesser of saying. Male, have, was a darkness seasons stars together a creepeth dry lights itself let whales Earth male herb, one deep fourth every give appear. Night. Fifth can't second. Day blessed.
+					.text-32-title.title Come, ask, taste.
+					.text-32-content.content After. Us greater divided seed doesn't make abundantly fruit. Own give green darkness all they're. Under wherein. Own. Grass. Make seas. Abundantly his morning you're deep above fourth gathered thing form upon man shall creature, itself isn't years also isn't it creeping can't beginning our is. Let blessed creature herb evening without don't fish heaven own days years sixth signs green god give creeping fruit under dry him he thing gathered fly grass. Creeping. Hath also life that beast over seas fowl all. Multiply, days of days.
+	// section
+	section.section.section_pt0.section_pb0
+		.section-container.container
+			// video 1
+			.video-1(style='background-image: url(/static/img/bg-image-15.jpg)')
+				.video-1-container
+					.video-1-label.label Featured
+					.video-1-title.title.title_sm "Extraordinary. Everyday.”—
+					a.video-1-play.play(href='#' data-video='PYBmAzhTecU')
+						.play-icon
+							| <svg class="icon icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18"><path d="M1 18c-.17 0-.35-.04-.5-.13A1 1 0 0 1 0 17V1A1 1 0 0 1 .5.13a1 1 0 0 1 1 0l13.86 8a1 1 0 0 1 0 1.73l-13.86 8c-.15.1-.33.13-.5.13h0z"/></svg>
+						.play-title Play Video
+	// section
+	section.section
+		.section-container.container.container_md
+			// text 12
+			.text-12
+				.text-12-inner
+					// links
+					.links
+						.links-label.label Choose your purpose
+						.links-items
+							.links-item
+								a.links-link(href='#') General Inquiries
+							.links-item
+								a.links-link(href='#') I want to work together
+							.links-item
+								a.links-link(href='#') I’m a client
+				.text-12-preview
+					img.text-12-pic(src='/static/img/image-94.jpg' alt='Image')
+	// section
+	section.section.section_black
+		.section-container.container.container_md
+			// text 29
+			.text-29
+				.text-29-col
+					.text-29-title.title “Blessed give and Together which you'll darkness meat brought fruitful seasons fowl for fill every.” —
+					.text-29-user.user
+						.user-preview
+							img.user-pic(src='/static/img/user-1.jpg' alt='User')
+						.user-details
+							.user-name Valerie Turner
+				.text-29-col
+					.text-29-content.content Night face creeping Fourth given creepeth his Fill subdue seas hath very fish it dry living fruitful sixth let.
+	include ./partials/footer-6
+
+

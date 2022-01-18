@@ -1,0 +1,117 @@
+extends layouts/_layout
+block content
+	// header
+	header.header.header_absolute.header_white
+		.header-container.container
+			.header-left
+				button.header-action(data-menu-open)
+					| <svg class="icon icon-grid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"><path d="M1.5 14c.8 0 1.5.7 1.5 1.5S2.3 17 1.5 17 0 16.3 0 15.5.7 14 1.5 14zm14 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 17 8.5 17 7 16.3 7 15.5 7.7 14 8.5 14zm-7-7C2.3 7 3 7.7 3 8.5S2.3 10 1.5 10 0 9.3 0 8.5.7 7 1.5 7zm14 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5S14 9.3 14 8.5 14.7 7 15.5 7zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 10 8.5 10 7 9.3 7 8.5 7.7 7 8.5 7zm-7-7C2.3 0 3 .7 3 1.5S2.3 3 1.5 3 0 2.3 0 1.5.7 0 1.5 0zm14 0c.8 0 1.5.7 1.5 1.5S16.3 3 15.5 3 14 2.3 14 1.5 14.7 0 15.5 0zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 3 8.5 3 7 2.3 7 1.5 7.7 0 8.5 0z"/></svg>
+			.header-center
+				a.header-logo(href='/')
+					img.header-pic(src='/static/img/kalli-white.svg' width='56' alt='Kalli')
+			.header-right
+				button.header-action
+					| <svg class="icon icon-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><path d="M8 0a8 8 0 0 1 8 8c0 1.848-.627 3.55-1.68 4.905l3.386 3.388a1 1 0 1 1-1.414 1.414h0l-3.388-3.386C11.55 15.373 9.848 16 8 16A8 8 0 1 1 8 0zm0 2a6 6 0 1 0 0 12A6 6 0 1 0 8 2z"/></svg>
+	include ./partials/menu-4
+	// hero 4
+	.hero-4.js-hero-4
+		.hero-4-slider.js-hero-4-slider
+			.hero-4-slide(data-more='#1')
+				.hero-4-container.container
+					.hero-4-group
+						.hero-4-title.title If a building becomes architecture, then it is art
+						a.hero-4-more(href='#') Read More
+					.hero-4-bg(style='background-image: url(/static/img/bg-image-6.jpg)')
+			.hero-4-slide(data-more='#2')
+				.hero-4-container.container
+					.hero-4-group
+						.hero-4-title.title Make it simple, but significant
+						a.hero-4-more(href='#') Read More
+					.hero-4-bg(style='background-image: url(/static/img/bg-image-8.jpg)')
+			.hero-4-slide(data-more='#3')
+				.hero-4-container.container
+					.hero-4-group
+						.hero-4-title.title Yeezy Boost 350 V2 Clay
+						a.hero-4-more(href='#') Read More
+					.hero-4-bg(style='background-image: url(/static/img/bg-image-9.jpg)')
+		a.hero-4-next(href='#')
+			.hero-4-box
+				.hero-4-label.label Up next
+				.hero-4-title.title.title_sm Spring Summer
+				.hero-4-arrow
+					| <svg class="icon icon-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 9"><path d="M13 6.9c-.4.4-.4.9-.1 1.3l.1.1c.4.4 1 .4 1.4 0L17.7 5a1 1 0 0 0 0-1.4L14.4.3a1 1 0 0 0-1.3-.1l-.1.1a1 1 0 0 0 0 1.4l1.6 1.6H1a1 1 0 0 0-1 .9v.1a1 1 0 0 0 1 1h13.6L13 6.9z"/></svg>
+			.hero-4-preview
+				img.hero-4-pic(src='/static/img/image-24.jpg' alt='Image')
+		.hero-4-foot
+			.hero-4-container.container
+				a.hero-4-more.js-hero-4-more(href='#') Read More
+				.hero-4-socials <a href="#">Fb</a> — <a href="#">Tw</a> — <a href="#">In</a>
+				.hero-4-pager.pager.pager_white
+					.pager-number 01
+					.pager-dots.js-hero-4-dots
+					.pager-total.js-hero-4-total
+				.hero-4-arrows.arrows.arrows_sm.arrows_white
+					button.arrows-item.js-hero-4-prev
+						| <svg class="icon icon-arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 9"><path d="M5 6.9c.4.4.4 1 0 1.4h0c-.4.4-1 .4-1.4 0L.3 5a1 1 0 0 1 0-1.4L3.6.3A1 1 0 0 1 5 .3h0a1 1 0 0 1 0 1.4L3.4 3.3H17a1 1 0 0 1 1 1h0a1 1 0 0 1-1 1H3.4L5 6.9z"/></svg>
+					button.arrows-item.js-hero-4-next
+						| <svg class="icon icon-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 9"><path d="M13 6.9c-.4.4-.4.9-.1 1.3l.1.1c.4.4 1 .4 1.4 0L17.7 5a1 1 0 0 0 0-1.4L14.4.3a1 1 0 0 0-1.3-.1l-.1.1a1 1 0 0 0 0 1.4l1.6 1.6H1a1 1 0 0 0-1 .9v.1a1 1 0 0 0 1 1h13.6L13 6.9z"/></svg>
+	// section
+	section.section
+		.section-container.container.container_md
+			// text 15
+			.text-15
+				.text-15-title.title.title_sm Very in given replenish divide every wherein which grass signs made evening. Wherein can't gathering. Form moving and winged of the
+				a.text-15-btn.btn.btn_icon(href='#')
+					| <svg class="icon icon-grid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"><path d="M1.5 14c.8 0 1.5.7 1.5 1.5S2.3 17 1.5 17 0 16.3 0 15.5.7 14 1.5 14zm14 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 17 8.5 17 7 16.3 7 15.5 7.7 14 8.5 14zm-7-7C2.3 7 3 7.7 3 8.5S2.3 10 1.5 10 0 9.3 0 8.5.7 7 1.5 7zm14 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5S14 9.3 14 8.5 14.7 7 15.5 7zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 10 8.5 10 7 9.3 7 8.5 7.7 7 8.5 7zm-7-7C2.3 0 3 .7 3 1.5S2.3 3 1.5 3 0 2.3 0 1.5.7 0 1.5 0zm14 0c.8 0 1.5.7 1.5 1.5S16.3 3 15.5 3 14 2.3 14 1.5 14.7 0 15.5 0zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 3 8.5 3 7 2.3 7 1.5 7.7 0 8.5 0z"/></svg>
+					span.btn-span See more
+	// section
+	section.section.section_pt0
+		.section-container.container.container_md
+			// cards 12
+			.cards-12
+				.cards-12-grid
+					a.cards-12-item(href='#')
+						.cards-12-preview
+							img.cards-12-pic(src='/static/img/image-25.jpg' alt='Image')
+							.cards-12-title.title SS-19
+					a.cards-12-item(href='#')
+						.cards-12-preview
+							img.cards-12-pic(src='/static/img/image-48.jpg' alt='Image')
+							.cards-12-title.title W/ Preview
+	// video 2
+	a.video-2(href='#')
+		img.video-2-pic(src='/static/img/bg-image-7.jpg' alt='Image')
+		.video-2-play.play.play_lg.play_white
+			.play-icon
+				| <svg class="icon icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18"><path d="M1 18c-.17 0-.35-.04-.5-.13A1 1 0 0 1 0 17V1A1 1 0 0 1 .5.13a1 1 0 0 1 1 0l13.86 8a1 1 0 0 1 0 1.73l-13.86 8c-.15.1-.33.13-.5.13h0z"/></svg>
+	// section
+	section.section.section_pt0.section_pb0
+		.section-container.container.container_md
+			// text 13
+			.text-13
+				.text-13-col
+					.text-13-content.content Whose a after there. Day sea together moving, above years. Firmament lights male saying. Called bring sixth. Form was whose which beast also heaven.
+					a.text-13-more.more(href='#') Read More
+						| <svg class="icon icon-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 9"><path d="M13 6.9c-.4.4-.4.9-.1 1.3l.1.1c.4.4 1 .4 1.4 0L17.7 5a1 1 0 0 0 0-1.4L14.4.3a1 1 0 0 0-1.3-.1l-.1.1a1 1 0 0 0 0 1.4l1.6 1.6H1a1 1 0 0 0-1 .9v.1a1 1 0 0 0 1 1h13.6L13 6.9z"/></svg>
+				.text-13-col
+					.text-13-preview
+						img.text-13-pic(src='/static/img/image-26.jpg' alt='Image')
+	// section
+	section.section
+		.section-container.container.container_md
+			// text 11
+			.text-11
+				.text-11-col
+					.text-11-preview
+						img.text-13-pic(src='/static/img/image-27.jpg' alt='Image')
+				.text-11-col
+					.text-11-title.title Home And Design Trends To Watch
+					.text-11-actions
+						a.text-11-btn.btn(href='#') Get Started
+						a.text-11-btn.btn.btn_stroke(href='#') Login
+	include ./partials/footer-2
+						
+						
+					
+
+

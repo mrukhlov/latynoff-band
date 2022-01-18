@@ -1,0 +1,46 @@
+// footer 7
+footer.footer-7(class=footerLight && 'footer-7_light')
+	.footer-7-container.container
+		.footer-7-row.footer-7-row_first
+			.footer-7-col.footer-7-col_lg
+				a.footer-7-logo(href='/')
+					if footerLight
+						img.footer-7-pic(src='/static/img/kalli-black.svg' width='56' alt='Kalli')
+					else
+						img.footer-7-pic(src='/static/img/kalli-white.svg' width='56' alt='Kalli')
+				.footer-7-contacts
+					p 248 N Rodeo Dr, Beverly Hills, CA 90210
+					p
+						a(href='tel:+1 234 567 890') +1 234 567 890
+				a.footer-7-more.more(href='#') Get Directions
+					| <svg class="icon icon-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 9"><path d="M13 6.9c-.4.4-.4.9-.1 1.3l.1.1c.4.4 1 .4 1.4 0L17.7 5a1 1 0 0 0 0-1.4L14.4.3a1 1 0 0 0-1.3-.1l-.1.1a1 1 0 0 0 0 1.4l1.6 1.6H1a1 1 0 0 0-1 .9v.1a1 1 0 0 0 1 1h13.6L13 6.9z"/></svg>
+				.footer-7-actions
+					if footerLight
+						a.footer-7-btn.btn.btn_stroke(href='#') Login
+						a.footer-7-btn.btn(href='#') Get Started
+					else
+						a.footer-7-btn.btn.btn_stroke.btn_white(href='#') Login
+						a.footer-7-btn.btn.btn_white(href='#') Get Started
+			.footer-7-col.footer-7-col_sm
+				.footer-7-title Company
+				nav.footer-7-nav.nav
+					a.nav-link(href='#') About
+					a.nav-link(href='#') Blog
+					a.nav-link(href='#') Stores
+					a.nav-link(href='#') Press
+					a.nav-link(href='#') Careers
+					a.nav-link(href='#') Contact Us
+			.footer-7-col.footer-7-col_sm
+				.footer-7-title Support
+				nav.footer-7-nav.nav
+					a.nav-link(href='#') Help Center
+					a.nav-link(href='#') Security
+					a.nav-link(href='#') Integrations
+					a.nav-link(href='#') Privacy Policy
+					a.nav-link(href='#') Terms of Service
+					a.nav-link(href='#') Cookie Policy
+		.footer-7-row
+			.footer-7-col.footer-7-col_lg
+				.footer-7-content.content Questions? <a href="mailto:kalli@mail.com">kalli@mail.com</a>
+			.footer-7-col
+				.footer-7-content.content Copyright © 2019 Kalli

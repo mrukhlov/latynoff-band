@@ -1,0 +1,42 @@
+// widgets
+.widgets
+	.widgets-item
+		// stories
+		.stories
+			.stories-title.title.title_sm Featured Stories
+			.stories-list
+				mixin storiesItem(caption, title)
+					.stories-item
+						a.stories-label.label(href='#')=caption
+						a.stories-name(href='#')=title
+				+storiesItem('Tech', 'Visit Borneo’s Orangutan, Proboscis Monkey And Sun Bear Sanctuaries')
+				+storiesItem('Sport', 'The Hungry Cat In Hollywood Is Closing After 15 Years')
+				+storiesItem('Travel', 'Heading To Lax? 405 Freeway Ramp Closures May Add To Your Drive')
+				+storiesItem('World', 'A Taste Of Oaxacan Comfort Food In Mar Vista')
+	.widgets-item
+		// promo
+		.promo(style='background-image: url(/static/img/image-47.jpg)')
+			a.promo-btn.btn.btn_white(href='#') Get started
+	.widgets-item
+		// instagram
+		.instagram
+			.instagram-title.title.title_sm Instagram
+			.instagram-list
+				a.instagram-item(href='#')
+					img.instagram-pic(src='/static/img/image-11.jpg' alt='Image')
+				a.instagram-item(href='#')
+					img.instagram-pic(src='/static/img/image-12.jpg' alt='Image')
+				a.instagram-item(href='#')
+					img.instagram-pic(src='/static/img/image-13.jpg' alt='Image')
+				a.instagram-item(href='#')
+					img.instagram-pic(src='/static/img/image-14.jpg' alt='Image')
+				a.instagram-item(href='#')
+					img.instagram-pic(src='/static/img/image-15.jpg' alt='Image')
+				a.instagram-item(href='#')
+					img.instagram-pic(src='/static/img/image-16.jpg' alt='Image')
+				a.instagram-item(href='#')
+					img.instagram-pic(src='/static/img/image-17.jpg' alt='Image')
+				a.instagram-item(href='#')
+					img.instagram-pic(src='/static/img/image-18.jpg' alt='Image')
+				a.instagram-item(href='#')
+					img.instagram-pic(src='/static/img/image-19.jpg' alt='Image')

@@ -1,0 +1,101 @@
+extends layouts/_layout
+block content
+	// header
+	header.header
+		.header-container.container
+			.header-left
+				button.header-action(data-menu-open)
+					| <svg class="icon icon-grid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"><path d="M1.5 14c.8 0 1.5.7 1.5 1.5S2.3 17 1.5 17 0 16.3 0 15.5.7 14 1.5 14zm14 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 17 8.5 17 7 16.3 7 15.5 7.7 14 8.5 14zm-7-7C2.3 7 3 7.7 3 8.5S2.3 10 1.5 10 0 9.3 0 8.5.7 7 1.5 7zm14 0c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5S14 9.3 14 8.5 14.7 7 15.5 7zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 10 8.5 10 7 9.3 7 8.5 7.7 7 8.5 7zm-7-7C2.3 0 3 .7 3 1.5S2.3 3 1.5 3 0 2.3 0 1.5.7 0 1.5 0zm14 0c.8 0 1.5.7 1.5 1.5S16.3 3 15.5 3 14 2.3 14 1.5 14.7 0 15.5 0zm-7 0c.8 0 1.5.7 1.5 1.5S9.3 3 8.5 3 7 2.3 7 1.5 7.7 0 8.5 0z"/></svg>
+			.header-center
+				a.header-logo(href='/')
+					img.header-pic(src='/static/img/kalli-black.svg' width='56' alt='Kalli')
+			.header-right
+				a.header-action(href='#')
+					| <svg class="icon icon-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><path d="M8 0a8 8 0 0 1 8 8c0 1.848-.627 3.55-1.68 4.905l3.386 3.388a1 1 0 1 1-1.414 1.414h0l-3.388-3.386C11.55 15.373 9.848 16 8 16A8 8 0 1 1 8 0zm0 2a6 6 0 1 0 0 12A6 6 0 1 0 8 2z"/></svg>
+	include ./partials/menu-1
+	// section
+	section.section
+		.section-container.container
+			// cards 11
+			.cards-11
+				.cards-11-head
+					.cards-11-title.title New in —
+					.cards-11-sort
+						a.cards-11-sort.active(href='#') Price
+						a.cards-11-sort(href='#') Brand
+				.cards-11-layout
+					.cards-11-sidebar
+						// filters
+						.filters
+							.filters-section
+								.filters-title Colour
+								.filters-inner
+									// colors
+									.colors
+										label.colors-item
+											input.colors-input(type='radio' name='color' checked)
+											span.colors-bg(style='background-color: #222222')
+										label.colors-item
+											input.colors-input(type='radio' name='color')
+											span.colors-bg(style='background-color: #81D3D4')
+										label.colors-item
+											input.colors-input(type='radio' name='color')
+											span.colors-bg(style='background-color: #F44F18')
+										label.colors-item
+											input.colors-input(type='radio' name='color')
+											span.colors-bg(style='background-color: #147ABB')
+										label.colors-item
+											input.colors-input(type='radio' name='color')
+											span.colors-bg.colors-bg_white(style='background-color: #FFFFFF')
+										label.colors-item
+											input.colors-input(type='radio' name='color')
+											span.colors-bg(style='background-color: #D14965')
+										label.colors-item
+											input.colors-input(type='radio' name='color')
+											span.colors-bg(style='background-color: #FAB35B')
+							.filters-section
+								.filters-title Size
+								.filters-inner.filters-inner_cols
+									a.filters-link.active(href='#') P
+									a.filters-link(href='#') M
+									a.filters-link(href='#') G
+							.filters-section
+								.filters-title Style
+								.filters-inner
+									a.filters-link.active(href='#') Casual
+									a.filters-link(href='#') Social
+									a.filters-link(href='#') Athleisure
+							.filters-section
+								.filters-title Categories
+								.filters-inner
+									a.filters-link(href='#') Accessories
+									a.filters-link(href='#') Blazers
+									a.filters-link(href='#') Pants
+									a.filters-link(href='#') Shirts
+					.cards-11-container
+						.cards-11-grid
+							.cards-11-cell.cards-11-cell_lg
+								+carousel('/static/img/image-61.jpg', '$420')
+							.cards-11-cell.cards-11-cell_lg
+								+carousel('/static/img/image-62.jpg', '$420')
+							.cards-11-cell
+								+carousel('/static/img/image-63.jpg', '$80')
+							.cards-11-cell
+								+carousel('/static/img/image-64.jpg', '$420')
+							.cards-11-cell
+								+carousel('/static/img/image-65.jpg', '$420')
+							.cards-11-cell
+								+carousel('/static/img/image-66.jpg', '$300')
+							.cards-11-cell
+								+carousel('/static/img/image-67.jpg', '$300')
+							.cards-11-cell
+								+carousel('/static/img/image-68.jpg', '$750')
+							.cards-11-cell
+								+carousel('/static/img/image-69.jpg', '$300')
+							.cards-11-cell
+								+carousel('/static/img/image-70.jpg', '$300')
+							.cards-11-cell
+								+carousel('/static/img/image-71.jpg', '$750')
+	include ./partials/footer-5
+
+

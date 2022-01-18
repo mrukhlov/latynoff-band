@@ -1,0 +1,12 @@
+include ./_icon
+
+mixin carousel(src, price)
+	.carousel
+		.carousel-list.js-carousel
+			a.carousel-slide(href='#')
+				img.carousel-pic(src=src alt='Image')
+			a.carousel-slide(href='#')
+				img.carousel-pic(src=src alt='Image')
+			a.carousel-slide(href='#')
+				img.carousel-pic(src=src alt='Image')
+		.carousel-price=price
