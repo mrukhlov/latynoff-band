@@ -1,0 +1,1 @@
+pug templates/pug --out templates/pages
